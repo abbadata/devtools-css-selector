@@ -1,0 +1,111 @@
+/*
+.sidebar {
+  width: 500px;
+  height: 300px;
+  border-width: 2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border: 1px solid #000;
+}
+*/
+
+.selectorline {
+  display: flex;
+  width: 100%;
+  /*border: 1px solid #000; */
+}
+.settingspane {
+  display: flex;
+  border: 1px solid #000;
+}
+.filterspane {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.customfilterspane {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.enablesection {
+  float: left;
+  white-space: nowrap;
+}
+.settingssection {
+  float: left;
+  white-space: nowrap;
+}
+.filter_heading {
+  background-color: #ccc;
+  color: black;
+  width: 100%;
+}
+.section {
+  border: 1px solid #000;
+  max-width: 10rem;
+}
+.customsection {
+  border: 1px solid #000;
+  max-width: 20rem;
+}
+.selector {
+  display: inline;
+  padding: 2px;
+  text-align: left;
+  flex-grow: 1;
+  width: 100px;
+  border-width: 2px;
+}
+.loading {
+  background-color: #ff8888;
+}
+.label {
+  display: inline;
+}
+.setting {
+  display: inline;
+}
+.list {
+  border: 1px solid #000;
+  overflow: auto;
+  color: black;
+  padding: 3px;
+  height: 50px;
+}
+
+.listentry {
+  display: inline;
+  color: black;
+  padding: 2px;
+}
+
+.addbutton {
+  display: inline;
+  color: black;
+  padding-left: 2px;
+  text-align: left;
+}
+.deletebutton {
+  display: inline;
+  color: white;
+  border: 1px solid #ccc;
+  background: #7892c2;
+  box-shadow: 0 0 5px -1px rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  text-align: left;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.filtervalue {
+  display: inline;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: left;
+  width: 7rem;
+  background-color: #fff;
+  flex-grow: 1;
+}
+.singleline {
+  white-space: nowrap;
+  overflow: hidden;
+}

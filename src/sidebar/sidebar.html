@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <title>CSS Selector Finder - Devtools Elements Panel Sidebar</title>
+    <link href="/static/js/sidebar.css" rel="stylesheet" />
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="sidebar">
+        <div class="selectorline">
+            <input id="generate_button" type="button" value="Generate"></input>
+            <input type="text" id="selector" class="selector"></input>
+        </div>
+        <div class="settingspane">
+            <div class="enablesection">
+                Use IDs:<input type="checkbox" id="enable_id"></input>
+                <br>
+                Use&nbsp;Class Names:<input type="checkbox" id="enable_class"></input>
+                <br>
+                Use Tags:<input type="checkbox" id="enable_tag"></input>
+                <br>
+                Use Custom Attribute:<input type="checkbox" id="enable_custom"></input>
+            </div>
+            <div class="settingssection">
+                <div class="label">Seed Min Length:</div>
+                <input id="field_seed_min_length" class="setting" type="text" size="5"></input>
+                <br />
+                <div class="label">Optimized Min Length:</div>
+                <input id="field_opt_min_length" class="setting" type="text" size="5"></input>
+                <br />
+                <div class="label">Threshhold:</div>
+                <input id="field_threshhold" class="setting" type="text" size="5"></input>
+                <br />
+                <div class="label">Max Number of Tries:</div>
+                <input id="field_max_num_tries" class="setting" type="text" size="5"></input>
+            </div>
+        </div>
+        <div class="filterspane">
+            <div class="section" id="id_filter_pane">
+                <div class="filter_heading">ID filter</div>
+                <div class="singleline">
+                    <input id="id_filter_value" type="text" class="filtervalue"></input>
+                    <input id="id_filter_add_button" type="button" class="addbutton" value="Add"></input>
+                </div>
+                <div id="id_filter_list" class="list">
+
+                </div>
+            </div>
+            <div class="section" id="class_filter_pane">
+                <div class="filter_heading">Class filter</div>
+                <div class="singleline">
+                    <input id="class_filter_value" type="text" class="filtervalue"></input>
+                    <input id="class_filter_add_button" type="button" class="addbutton" value="Add"></input>
+                </div>
+                <div id="class_filter_list" class="list">
+
+                </div>
+            </div>
+            <div class="section" id="tag_filter_pane">
+                <div class="filter_heading">Tag filter</div>
+                <div class="singleline">
+
+                    <input id="tag_filter_value" type="text" class="filtervalue"></input>
+                    <input id="tag_filter_add_button" type="button" class="addbutton" value="Add"></input>
+                </div>
+                <div id="tag_filter_list" class="list">
+
+                </div>
+            </div>
+        </div>
+        <div class="customfilterspane">
+            <div class="customsection" id="custom_filter_pane">
+                <div class="filter_heading">Attribute filter</div>
+                <div class="singleline">
+
+                    <input id="custom_filter_name" type="text" class="filtervalue"></input> =
+                    <input id="custom_filter_value" type="text" class="filtervalue"></input>
+                    <input id="custom_filter_add_button" type="button" class="addbutton" value="Add"></input>
+                </div>
+                <div id="custom_filter_list" class="list">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/sidebar.js"></script>
+</body>
+
+</html>
