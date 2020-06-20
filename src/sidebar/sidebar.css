@@ -3,6 +3,9 @@
   width: 100%;
   /*border: 1px solid #000; */
 }
+.alert {
+  color: red;
+}
 .settingspane {
   display: flex;
   border: 1px solid #000;
@@ -35,7 +38,7 @@
 }
 .customsection {
   border: 1px solid #000;
-  max-width: 20rem;
+  max-width: 30rem;
 }
 .selector {
   display: inline;

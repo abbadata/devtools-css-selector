@@ -3,7 +3,7 @@ import sidebar from "./sidebar.css";
 var idEnabled = true;
 var classEnabled = true;
 var tagEnabled = true;
-var customEnabled = false;
+var customEnabled = true;
 var idFilter = [];
 var classFilter = [];
 var tagFilter = [];
@@ -24,6 +24,7 @@ backgroundPageConnection.postMessage({
 
 backgroundPageConnection.onMessage.addListener(function (msg) {
   if (msg.status == "SELECTOR_OK") {
+    document.getElementById("selector").classList.remove("alert");
     document.getElementById("selector").classList.remove("loading");
     let selector = document.getElementById("selector");
     if (selector) {
@@ -33,8 +34,9 @@ backgroundPageConnection.onMessage.addListener(function (msg) {
     }
   } else if (msg.status == "SELECTOR_ERROR") {
     // set selector to "" if error
+    document.getElementById("selector").classList.add("alert");
     document.getElementById("selector").classList.remove("loading");
-    document.getElementById("selector").value = "";
+    document.getElementById("selector").value = msg.error;
   }
 });
 
@@ -47,7 +49,6 @@ function initialize() {
   document.getElementById("enable_id").checked = idEnabled;
   document.getElementById("enable_class").checked = classEnabled;
   document.getElementById("enable_tag").checked = tagEnabled;
-  document.getElementById("enable_custom").checked = customEnabled;
   document.getElementById("field_seed_min_length").value = seedMinLength;
   document.getElementById("field_opt_min_length").value = optimizedMinLength;
   document.getElementById("field_threshhold").value = threshhold;
@@ -204,16 +205,6 @@ function clickEnableTagCheckbox() {
   }
 }
 
-function clickEnableCustomCheckbox() {
-  if (this.checked) {
-    unHideDiv("custom_filter_pane");
-    customEnabled = true;
-  } else {
-    hideDiv("custom_filter_pane");
-    customEnabled = false;
-  }
-}
-
 function changeSeedMinLength() {
   seedMinLength = Number(this.value);
 }
@@ -255,9 +246,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("enable_tag")
     .addEventListener("click", clickEnableTagCheckbox);
-  document
-    .getElementById("enable_custom")
-    .addEventListener("click", clickEnableCustomCheckbox);
 
   document
     .getElementById("id_filter_add_button")

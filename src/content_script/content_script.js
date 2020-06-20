@@ -65,7 +65,7 @@ function setSelection(element, jsonSettings) {
     console.log("  Error when running finder: ", err);
     chrome.runtime.sendMessage({
       status: "SELECTOR_ERROR",
-      error: err,
+      error: err.message,
     });
   }
   return selection;
