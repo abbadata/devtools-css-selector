@@ -1,6 +1,6 @@
 {
-  "short_name": "CSS Selector Generator for Chrome Devtools Elements Sidebar",
-  "name": "CSS Selector Generator for Chrome Devtools Elements Sidebar",
+  "short_name": "CSS Selector Finder for Chrome Devtools",
+  "name": "CSS Selector Finder for Chrome Devtools",
   "version": "0.1",
   "description": "Generate CSS Selectors from the Chrome Devtools Elements Panel",
   "permissions": ["activeTab", "http://*/*", "https://*/*"],
@@ -11,9 +11,9 @@
     "persistent": false
   },
   "icons": {
-    "16": "/images/abba16.png",
-    "48": "/images/abba48.png",
-    "128": "/images/abba128.png"
+    "16": "abba16.png",
+    "48": "abba48.png",
+    "128": "abba128.png"
   },
   "content_scripts": [
     {

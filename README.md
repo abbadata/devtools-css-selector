@@ -1,6 +1,6 @@
-# Chrome Devtools Elements Panel - CSS Selector Finder
+# Chrome Devtools Elements Panel Sidebar - CSS Selector Finder
 
-Find CSS Selectors easily by using the Chrome Devtools Elements Panel to navigate DOM elements.
+Find CSS Selectors directly from the Chrome Devtools Elements Panel Sidebar.
 
 ## Installation
 
@@ -8,10 +8,18 @@ Install the Chrome Extension
 
 ## Running
 
-- Open the Chrome Devtools. (Right click on page element and click "Inspect")
+- Open the Chrome Devtools. (Right click on a page element and click "Inspect")
 - There will be a "CSS Selectors" option on the sidebar. Click this.
 - Click on DOM elements in the Elements panel. The CSS Selector will be updated dynamically.
 - Customize CSS Selector generation by enabling/disabling ID/Class/Tags, custom attributes, filtered values
+
+## Settings
+
+- Settings
+
+## Limitations
+
+- Does not work with IFRAMEs
 
 ## Development
 
