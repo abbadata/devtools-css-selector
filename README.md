@@ -3,7 +3,7 @@
 Find CSS Selectors directly from the Chrome Devtools Elements Panel Sidebar.
 
 - Unique CSS selectors are continuously generated as the selection is changed in the Chrome Devtools Elements panel
-- Highly configurable selector generation
+- Highly configurable. Settings can easily be changed interactively and results can be seen immediately.
   - Enable/Disable usage of IDs, Class names, and Tag names for selector generation
   - Filter out specific values of IDs, Class names, and Tag names
   - Use custom attribute names and attribute name/value pairs
