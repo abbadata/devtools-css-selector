@@ -96,6 +96,16 @@ function regenerate() {
   );
 }
 
+function copyToClipboard() {
+  let tempInput = document.createElement("input");
+  tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+  tempInput.value = document.getElementById("selector").value;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+}
+
 function updateList(listid, list, func) {
   let listElem = document.getElementById(listid);
 
@@ -223,6 +233,9 @@ document.addEventListener("DOMContentLoaded", function () {
   document
     .getElementById("generate_button")
     .addEventListener("click", regenerate);
+  document
+    .getElementById("copy_button")
+    .addEventListener("click", copyToClipboard);
 
   document
     .getElementById("field_seed_min_length")
