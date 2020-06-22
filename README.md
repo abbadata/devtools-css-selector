@@ -49,9 +49,18 @@ alt="1-Minute Demo" width="240" height="180" border="10" /></a>
 
 ### Screenshots
 
-![Screenshot](https://github.com/abbadata/devtools-css-selector/docs/screenshot3.png)
-
-![Screenshot](https://github.com/abbadata/devtools-css-selector/docs/screenshot4.png)
+<img
+src="docs/screenshot3.png"
+raw=true
+alt="Screenshot"
+style="margin-right: 10px;"
+/>
+<img
+src="docs/screenshot4.png"
+raw=true
+alt="Screenshot"
+style="margin-right: 10px;"
+/>
 
 ### Credits
 
