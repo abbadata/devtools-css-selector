@@ -13,6 +13,12 @@ Find CSS Selectors directly from the Chrome Devtools Elements Panel Sidebar.
 
 Install the Chrome Extension
 
+## 1-Minute Demo
+
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=cWtvF4ys9Cc
+" target="_blank"><img src="http://img.youtube.com/vi/cWtvF4ys9Cc/0.jpg" 
+alt="1-Minute Demo" width="240" height="180" border="10" /></a>
+
 ## Running
 
 - Open the Chrome Devtools by inspecting a page element. (Right click on a page element and click "Inspect")
@@ -40,6 +46,12 @@ Install the Chrome Extension
 1. Navigate to chrome://extensions
 2. Click the "Developer mode" switch if not already enabled
 3. Click "Load unpacked". Select the <project>/dist directory as the extension directory.
+
+### Screenshots
+
+![Screenshot](https://github.com/abbadata/devtools-css-selector/docs/screenshot3.png)
+
+![Screenshot](https://github.com/abbadata/devtools-css-selector/docs/screenshot4.png)
 
 ### Credits
 
