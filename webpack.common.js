@@ -6,7 +6,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: {
     "static/js/background/background": "./src/background/background.js",
-    "static/js/devtools": "./src/devtools/devtools.js",
     "static/js/sidebar": "./src/sidebar/sidebar.js",
     "static/js/content_script": "./src/content_script/content_script.js",
   },
@@ -44,15 +43,11 @@ module.exports = {
     ],
   },
   plugins: [
-    new CopyPlugin({ patterns: [{ from: "public/" }] }),
+    new CopyPlugin({
+      patterns: [{ from: "public/" }, { from: "src/devtools" }],
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
-    }),
-    new HtmlWebpackPlugin({
-      hash: true,
-      inject: false,
-      template: "./src/devtools/devtools.html",
-      filename: "./devtools.html",
     }),
     new HtmlWebpackPlugin({
       hash: true,
