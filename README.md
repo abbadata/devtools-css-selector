@@ -11,7 +11,8 @@ Find CSS Selectors directly from the Chrome Devtools Elements Panel Sidebar.
 
 ## Installation
 
-Install the Chrome Extension
+Install the Chrome Extension: 
+[CSS Selector Finder for Chrome Devtools](https://chrome.google.com/webstore/detail/css-selector-finder-for-c/mbeedbpphndkijipfcklhlgmoolapiml)
 
 ## 1-Minute Demo
 
