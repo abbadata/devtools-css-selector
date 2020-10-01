@@ -9,9 +9,12 @@ Find CSS Selectors directly from the Chrome Devtools Elements Panel Sidebar.
   - Use custom attribute names and attribute name/value pairs
   - Various settings to control robustness and optimization of selectors
 
+[Project home page](https://abbadata.com/devtools_selector_finder.html)
+
 ## Installation
 
-Install the Chrome Extension
+Install the Chrome Extension: 
+[CSS Selector Finder for Chrome Devtools](https://chrome.google.com/webstore/detail/css-selector-finder-for-c/mbeedbpphndkijipfcklhlgmoolapiml)
 
 ## 1-Minute Demo
 
