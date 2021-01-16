@@ -18,7 +18,7 @@ Install the Chrome Extension:
 
 ## 1-Minute Demo
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=UtvjCF_uPBg" target="_blank"><img src="http://img.youtube.com/vi/UtvjCF_uPBg/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=cWtvF4ys9Cc" target="_blank"><img src="http://img.youtube.com/vi/cWtvF4ys9Cc/0.jpg" 
 alt="1-Minute Demo" width="240" height="180" border="10" /></a>
 
 ## Running
